@@ -1,0 +1,42 @@
+TidyData Code Book
+
+This Code Book lists the variables in the cleandataset.csv file,
+explanations for how the variables were developed, and other relevant
+information for the tidydata.R script used to create the tidy dataset.
+
+Variables:
+
+activity.label -> contains a label for the activity being done by the 
+		  subject for the row.  Ex: “WALKING”, “LAYING”.  Developed
+		  by mapping the activity labels in the 
+		  /UCR HAR Dataset/activity_labels.txt file to the
+		  /UCR HAR Dataset/test/y_test.txt and 
+		  /UCR HAR Dataset/train/y_train.txt files
+
+subject ->        contains the subject ID for the current record.  From the
+ 		  /UCR HAR Dataset/test/subject_test.txt and 
+		  /UCR HAR Dataset/train/subject_train.txt files
+
+measurement variables -> the rest of the variables are measurement variables
+                         from the /UCR HAR Dataset/test/X_test.txt and 
+		         /UCR HAR Dataset/train/X_train.txt files.  For
+ 			 descriptions of the variables, please read the 
+			 UCI HAR Dataset documentation.  Each variable in the
+ 			 cleardataset.csv file contains the average value			 for that measurement for the particular group of
+			 activity.label and subject in each row.  The units
+   			 for the measurement variables are Hz
+
+
+Other Processing Information:
+
+the tidydata.R cookbook assumes the UCI HAR directory is located in the 
+current working directory for the R session.  If you want to replicate the 
+tidy dataset creation, please move the directory into your current working
+directory.  Also, the script depends on subdirectories with the UCI HAR
+directory, so please leave subdirectories as is
+
+The tidydata.R cookbook will write cleandataset.csv to the current working
+directory
+
+		 
+		  
