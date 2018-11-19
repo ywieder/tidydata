@@ -1,6 +1,6 @@
 TidyData Code Book
 
-This Code Book lists the variables in the cleandataset.csv file,
+This Code Book lists the variables in the cleandataset.tdt file,
 explanations for how the variables were developed, and other relevant
 information for the tidydata.R script used to create the tidy dataset.
 
@@ -22,7 +22,7 @@ measurement variables -> the rest of the variables are measurement variables
 		         /UCR HAR Dataset/train/X_train.txt files.  For
  			 descriptions of the variables, please read the 
 			 UCI HAR Dataset documentation.  Each variable in the
- 			 cleardataset.csv file contains the average value			 for that measurement for the particular group of
+ 			 cleardataset.txt file contains the average value for that measurement for the particular group of
 			 activity.label and subject in each row.  The units
    			 for the measurement variables are Hz
 
@@ -35,7 +35,7 @@ tidy dataset creation, please move the directory into your current working
 directory.  Also, the script depends on subdirectories with the UCI HAR
 directory, so please leave subdirectories as is
 
-The tidydata.R cookbook will write cleandataset.csv to the current working
+The tidydata.R cookbook will write cleandataset.txt to the current working
 directory
 
 		 
